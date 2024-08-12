@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<!-- saved from url=(0102)http://localhost:8080/evaluacion_intensidad/EvaluacionIntensidadesServlet?metodo=irAFormularioNuevoIzq -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<link href="./Formulario nuevo - Evaluación de intensidades_files/css2" rel="stylesheet">
+		
+	<link rel="stylesheet" href="./Formulario nuevo - Evaluación de intensidades_files/jquery-ui.css">
+	<link rel="stylesheet" href="./Formulario nuevo - Evaluación de intensidades_files/formulario.css">
+	
+	<script type="text/javascript" async="" src="./Formulario nuevo - Evaluación de intensidades_files/adrum-ext.a612bcc4a570ebe7903e15cce8694f0c.js.descarga"></script><script type="text/javascript" async="" charset="utf-8" src="./Formulario nuevo - Evaluación de intensidades_files/recaptcha__es_419.js.descarga" crossorigin="anonymous" integrity="sha384-BqUz4Q6mDTKd+2zXOVCbKMAt9Fq1c+zU5GqbQk490c/lqAi5CN8DEy1AKmAWf8TY"></script><script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/jquery-1.10.2.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/jquery-ui-1.10.2.js.descarga"></script>	
+	
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/conexiones.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/formulario_nuevo_izq.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/validacion.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/general.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/selector_tabla.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/i18n_es.js.descarga"></script>
+	<script type="text/javascript" src="./Formulario nuevo - Evaluación de intensidades_files/controles.js.descarga"></script>
+	
+	<script async="" src="./Formulario nuevo - Evaluación de intensidades_files/js"></script>
+	<script src="./Formulario nuevo - Evaluación de intensidades_files/api.js.descarga" async="" defer=""></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+	
+		gtag('config', 'G-RG6HZS21QF');
+
+		window.setTimeout(function() {
+			document.getElementById("formulario").style.display="flex";			
+		}, 1000)
+	</script>	    
+	
+	<!--  prueba de concepto appdynamics -->
+<script charset="UTF-8">
+	window['adrum-start-time'] = new Date().getTime();
+	(function(config){
+    config.appKey = 'AD-AAB-AAS-ABG';
+    config.adrumExtUrlHttp = 'http://cdn.appdynamics.com';
+    config.adrumExtUrlHttps = 'https://cdn.appdynamics.com';
+    config.beaconUrlHttp = 'http://col.eum-appdynamics.com';
+    config.beaconUrlHttps = 'https://col.eum-appdynamics.com';
+    config.xd = {enable : false};
+	})(window['adrum-config'] || (window['adrum-config'] = {}));
+</script>
+
+<script src="./Formulario nuevo - Evaluación de intensidades_files/adrum-4.5.12.2461.js.descarga"></script>
+
+	
+	<style>	
+		body {			
+			background-color:#f0eeef;
+			padding:0; 
+			margin:0;
+			font-family: 'Roboto';
+			font-size: 16px;			
+		}
+				
+		label {			
+			font-size:16px;			
+		}			
+		
+		.labelRadioButton {
+			margin-right:20px; font-weight:normal;
+		}
+		
+		.panelPreguntas {
+			display:grid;
+			gap: 10px 1px;
+			grid-template-columns: 40vw auto;
+			background-color: #ddd;
+			margin: 20px 6.41vw 10px 6.41vw;
+			padding: 20px min(1vw, 20px) 20px min(1vw, 20px);
+			text-align:left;
+			opacity:1;
+			z-index:2;
+		}			
+				
+		.panelPreguntass label {
+           width: 100%;  
+        }
+               
+        legend {
+            width: auto;  
+           	background-color: rgb(104, 158, 55);  
+			color: #fff; font-weight: bold; font-size: 18px; 
+			padding: 5px 10px 5px 10px;           
+        }
+                
+        .panelPreguntas input {
+        	box-sizing:border-box;
+        	width:100%;            
+            padding:0;
+            margin:0;           
+        }
+
+		.panelPreguntas select {
+			width: 100%; 
+			font-family: 'Roboto';
+			padding:0;
+            margin:0;
+			
+		}
+		
+		.panelPreguntas input[type="checkbox"] {
+			margin-right:6px;
+			width:auto;
+		}
+		
+		.panelPreguntas input[type="radio"] {
+			margin-right:6px;
+			width:auto;
+		}
+		
+		.panelPreguntas textarea {
+			width: 100%; resize: none; margin-top:10px;
+		}
+		
+		.panelOtrosEfectos {
+			display: flex;
+			flex-direction: column;
+			background-color: #ddd;
+			margin: 20px 6.41vw 10px 6.41vw;
+			padding: 20px;
+			text-align:left;
+			opacity:1;
+			z-index:2;		
+		}
+		
+		.contenedorMultiRespuesta {
+			display:flex; flex-direction: row; flex-wrap: wrap; align-items:center;	gap:10px;			
+		}
+		
+		.rtaMultiRespuesta {
+			display:flex;
+		}
+				
+		.elemColor1 {
+			background-color: #ddd;
+		}
+		.elemColor2 {
+			background-color: #ddd;
+		}				
+		
+		option { font-family: 'Roboto', sans-serif; }
+		
+		.control_error { border: 2px solid red; }
+		
+		
+		
+		
+		.dependientesDano { display:none;}
+		
+		
+				
+	</style>
+	
+	<script type="text/javascript">
+	function mostrarAncho() {
+		const ww = window.innerWidth;
+		alert (ww + " "+( ww*0.015) )
+	}
+	</script>
+	
+	<title>Formulario nuevo - Evaluación de intensidades</title>
+</head>
+
+<body onload=" init(&#39;null&#39;);  /*mostrarAncho(); validarForm({mostrarMensaje:false});*/" style="background-image: url(&quot;img/pattern_peq_bn.png&quot;); background-attachment: fixed; position: relative; z-index: 0;">
+	
+	
+	 
+	
+	<form id="formularioForm" action="http://localhost:8080/evaluacion_intensidad/EvaluacionIntensidadesServlet?metodo=procesarDatosPrueba" method="post" style="background-color: rgba(255, 255, 255, 0.5); margin:0 min(50px, 0.037vw) 0 min(50px, 0.037vw); position:relative; z-index:1;" data-gtm-form-interact-id="0">
+		<input type="hidden" id="idForm" name="idForm" value=""> 
+		<input type="hidden" id="metodo" name="metodo" value="verSalidas">		
+			
+		<div style="background-image: url(&#39;img/pattern_peq.png&#39;); color: #EEEEEE; font-size: 2em; 
+		padding: 10px 10px 10px 10px; display:flex; justify-content: space-between; align-items: center;">			
+			<div style="display:flex; align-items: center;">
+				<img src="./Formulario nuevo - Evaluación de intensidades_files/mundo.png" height="70" style="margin: 0 auto;">				
+			</div>
+			
+			<p style="font-weight: bold; font-size: 28px;">Reporta el sismo</p>
+			
+			<img src="./Formulario nuevo - Evaluación de intensidades_files/logo_sgc_transparente_blanco.png" height="70">
+		</div>			
+			
+		<div id="textoDescriptivo" style="font-weight: bold; text-align: center; color: #4e535b; background-color: #CCCCCC;
+		margin: 0 var(--ancho_margen) 0 var(--ancho_margen);
+		padding-left:80px; padding-right:80px;
+		padding-bottom: 5px; padding-top: 5px; font-size: 14px;">
+			Lo que reportas por medio de este sencillo formulario le sirve al Servicio Geológico Colombiano para recolectar información relacionada con el área en la que se sintió un sismo y los efectos que causó, con el fin de evaluar la intensidad sísmica. 
+			<br>Igualmente les permite a los científicos tener un mejor entendimiento del riesgo sísmico en Colombia.
+		</div>		
+							
+		<fieldset class="panelPreguntas">
+			<legend>Elige el sismo</legend>
+			<label>Selecciona el sismo que sentiste</label>					
+			<input type="hidden" id="esSismoManual" value="">
+			  
+			<select id="id_sismo" name="id_sismo" onchange="handleChangeIdSismo(); validarIdSismo([]);"><option value="-1">Selecciona</option><option value="SGC2024pwkpcw">12/08/2024 - 11:03 AM Puerto Guzmán - Putumayo, Colombia</option><option value="SGC2024pvwtpj">12/08/2024 - 04:05 AM Los Santos - Santander, Colombia</option><option value="SGC2024pvtyjw">12/08/2024 - 02:40 AM Los Santos - Santander, Colombia</option><option value="SGC2024puvxlo">11/08/2024 - 02:35 PM Pitalito - Huila, Colombia</option><option value="SGC2024ptzhul">11/08/2024 - 03:13 AM Los Santos - Santander, Colombia</option><option value="SGC2024ptecgv">10/08/2024 - 04:33 PM Calima (El Darién) - Valle del Cauca, Colombia</option><option value="SGC2024pstlfr">10/08/2024 - 11:12 AM Los Santos - Santander, Colombia</option><option value="SGC2024pspvnn">10/08/2024 - 09:23 AM Los Santos - Santander, Colombia</option><option value="SGC2024pspemp">10/08/2024 - 09:03 AM Riosucio - Chocó, Colombia</option><option value="SGC2024psowzx">10/08/2024 - 08:55 AM Riosucio - Chocó, Colombia</option><option value="SGC2024pshusj">10/08/2024 - 05:21 AM Los Santos - Santander, Colombia</option><option value="SGC2024prvljs">09/08/2024 - 11:08 PM Bachaquero, Venezuela</option><option value="SGC2024prlaiu">09/08/2024 - 05:53 PM Zapatoca - Santander, Colombia</option><option value="SGC2024prdusj">09/08/2024 - 02:15 PM Panama</option><option value="SGC2024pravmc">09/08/2024 - 12:46 PM Los Santos - Santander, Colombia</option><option value="SGC2024pqwtfp">09/08/2024 - 10:43 AM Quimbaya - Quindío, Colombia</option><option value="SGC2024pqocgc">09/08/2024 - 06:22 AM Venezuela</option><option value="SGC2024ppyjme">08/08/2024 - 10:27 PM El Águila - Valle del Cauca, Colombia</option><option value="SGC2024ppwyze">08/08/2024 - 09:45 PM Chámeza - Casanare, Colombia</option><option value="SGC2024ppusqd">08/08/2024 - 08:37 PM Argelia - Cauca, Colombia</option><option value="SGC2024ppnqhw">08/08/2024 - 05:03 PM El Calvario - Meta, Colombia</option><option value="SGC2024ppgeuf">08/08/2024 - 01:22 PM Yaguará - Huila, Colombia</option><option value="SGC2024ppahdj">08/08/2024 - 10:20 AM Zapatoca - Santander, Colombia</option><option value="SGC2024polnul">08/08/2024 - 02:55 AM Zapatoca - Santander, Colombia</option><option value="SGC2024pojyfy">08/08/2024 - 02:07 AM Manaure - la Guajira, Colombia</option><option value="SGC2024poajzd">07/08/2024 - 09:19 PM Cucunubá - Cundinamarca, Colombia</option><option value="SGC2024pnxycw">07/08/2024 - 08:05 PM Mar Caribe</option><option value="SGC2024pnwhkl">07/08/2024 - 07:15 PM Océano Pacífico</option><option value="SGC2024pntjpc">07/08/2024 - 05:47 PM Los Santos - Santander, Colombia</option><option value="SGC2024pnqqur">07/08/2024 - 04:25 PM Los Santos - Santander, Colombia</option><option value="SGC2024pnmqng">07/08/2024 - 02:24 PM Los Santos - Santander, Colombia</option><option value="SGC2024pmusgv">07/08/2024 - 05:23 AM Los Santos - Santander, Colombia</option><option value="SGC2024pmqckp">07/08/2024 - 03:04 AM Los Santos - Santander, Colombia</option><option value="SGC2024pmkyso">07/08/2024 - 12:29 AM Panama</option><option value="SGC2024pmcemb">06/08/2024 - 08:04 PM Villanueva - Santander, Colombia</option><option value="SGC2024pmbiva">06/08/2024 - 07:39 PM Lago Maracaibo, Venezuela</option><option value="SGC2024pmarqv">06/08/2024 - 07:19 PM Timaná - Huila, Colombia</option><option value="SGC2024plnptm">06/08/2024 - 12:45 PM Los Santos - Santander, Colombia</option><option value="SGC2024pldkeh">06/08/2024 - 07:36 AM Los Santos - Santander, Colombia</option><option value="SGC2024pkptcj">06/08/2024 - 12:44 AM Venezuela</option><option value="SGC2024pkjdaf">05/08/2024 - 09:25 PM Uribe - Meta, Colombia</option><option value="SGC2024pkinnw">05/08/2024 - 09:07 PM Los Santos - Santander, Colombia</option><option value="SGC2024pkckfg">05/08/2024 - 06:02 PM Océano Pacífico</option><option value="SGC2024pjwkqh">05/08/2024 - 03:01 PM Los Santos - Santander, Colombia</option><option value="SGC2024pjompm">05/08/2024 - 11:02 AM Valledupar - Cesar, Colombia</option><option value="SGC2024pjczck">05/08/2024 - 05:15 AM Salento - Quindío, Colombia</option><option value="SGC2024pijgqe">04/08/2024 - 07:20 PM Santo Domingo, Venezuela</option><option value="SGC2024piiojw">04/08/2024 - 06:59 PM Los Santos - Santander, Colombia</option><option value="SGC2024piiatt">04/08/2024 - 06:42 PM  Macas, Ecuador</option><option value="SGC2024phynci">04/08/2024 - 01:56 PM Bolívar - Valle del Cauca, Colombia</option></select>
+			
+			<p>Si el sismo no está en la lista, <a href="http://localhost:8080/evaluacion_intensidad/EvaluacionIntensidadesServlet?metodo=irAFormularioNuevoIzq#" onclick="mostrarSismoManual(); validarIdSismo([]);">haz clic aquí.</a></p>
+			
+			<div id="panelSismoManual" style="display: none;">
+			
+				<label>¿En qué fecha percibiste el sismo?</label>
+				<input type="text" id="sismo_alterno_fecha" name="sismo_alterno_fecha" title="Fecha">
+				
+				<label>¿A qué hora lo sentiste?</label>
+				<select name="sismo_alterno_hora" id="sismo_alterno_hora" style="max-width: 50px;"></select> 
+				<select name="sismo_alterno_minuto" id="sismo_alterno_minuto" style="max-width: 50px;"></select> 
+				<select name="sismo_alterno_tarde" style="max-width: 50px;">
+					<option value="AM">AM</option>
+					<option value="PM">PM</option>
+				</select>					
+			</div>				
+		</fieldset>						
+         
+		<fieldset class="panelPreguntas">
+			<legend>¿Dónde estabas?</legend>
+								
+			<button onclick="geolocalizar()" id="btnGeolocalizar" type="button" style="width: min(100%, 195px); padding:5px 10px 5px 10px; margin-bottom: 10px; background-color:  #1a4480; color:#fff; display: inline-flex; align-items: center;">				
+				Usar mi ubicación actual&nbsp;
+				<svg width="25" height="25" xmlns="http://www.w3.org/2000/svg">					
+					<path fill="#ddd" d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path>					
+				</svg>													
+			</button>
+			<label></label>
+	
+			<label>Departamento</label>
+			<select id="id_departamento" name="id_departamento" onchange="cargarMunicipios(this.value, false); validarDepartamento([]);"><option value="-1">Selecciona</option><option value="91">Amazonas</option><option value="5">Antioquia</option><option value="81">Arauca</option><option value="88">Archipiélago de San Andres, Providencia y Santa Catalina</option><option value="8">Atlántico</option><option value="11">Bogotá  D. C.</option><option value="13">Bolívar</option><option value="15">Boyacá</option><option value="17">Caldas</option><option value="18">Caquetá</option><option value="85">Casanare</option><option value="19">Cauca</option><option value="20">Cesar</option><option value="27">Chocó</option><option value="23">Cordoba</option><option value="25">Cundinamarca</option><option value="94">Guainía</option><option value="95">Guaviare</option><option value="41">Huila</option><option value="44">La Guajira</option><option value="47">Magdalena</option><option value="50">Meta</option><option value="52">Nariño</option><option value="54">Norte de Santander</option><option value="86">Putumayo</option><option value="63">Quindío</option><option value="66">Risaralda</option><option value="68">Santander</option><option value="70">Sucre</option><option value="73">Tolima</option><option value="76">Valle del Cauca</option><option value="97">Vaupés</option><option value="99">Vichada</option></select>
+		
+			<label>Municipio</label>
+			<select id="id_municipio" name="id_municipio" onchange="cargarCentrosPoblados(this.value); validarMunicipio([])"></select>
+			
+			<label>Centro poblado</label>
+			<select id="id_centro_poblado" name="id_centro_poblado" onchange="validarCentroPoblado([])"></select>
+					
+			<label>Dirección aproximada</label>			
+			<input type="text" id="direccion" name="direccion" required="required" title="Dirección" maxlength="100" placeholder="Por ejemplo: Calle 5 con carrera 2" onchange="validarDireccion([]);">
+		</fieldset>
+		
+		<fieldset class="panelPreguntas">
+			<legend>Prueba</legend>
+			<label>latitud</label>													
+			<input type="text" id="latitud" name="latitud" value="9.562">
+										
+			<label>longitud</label>													
+			<input type="text" id="longitud" name="longitud" value="-74.558">
+		
+			<button onclick="probarDeteccion()" type="button">Probar deteccion centro poblado</button>				
+			<label id="demo"></label>								
+		</fieldset>
+		
+		<fieldset class="panelPreguntas">
+			<legend>Efectos en personas</legend>
+
+			<label>¿En qué lugar te encontrabas en el momento del sismo?</label>
+			<div class="contenedorMultiRespuesta">
+				<div class="rtaMultiRespuesta">
+					<input type="radio" name="donde_estaba" id="adentro" value="1" onclick="toggleAdentroEdificacion();" checked="checked"> 
+					<label style="word-wrap: break-word;">Dentro de una edificación</label> 								
+				</div>
+				<div class="rtaMultiRespuesta">
+					<input type="radio" name="donde_estaba" id="afuera" value="0" onclick="toggleAdentroEdificacion();">							
+					En la calle
+				</div>
+			</div>
+ 			
+			
+				<label class="dependientesAdentroEdificio">¿En qué piso estabas?</label>
+
+				<select class="dependientesAdentroEdificio" id="piso" name="piso" title="Piso en el que te encontrabas" onchange="validarPiso([])">
+					<option value="-1">Selecciona</option>
+					<option value="0">Sótano</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">Mayor a 5</option>
+				</select>
+
+							
+				<label class="dependientesAdentroEdificio">¿Saliste a la calle?</label>
+				<span class="dependientesAdentroEdificio" id="divRtasSalioCalle">						
+					<input type="radio" name="salio_calle" value="1" onchange="validarSalioCalle([])"> <label class="labelRadioButton">Sí</label>
+					<input type="radio" name="salio_calle" value="0" id="saliste_calle_no" onchange="validarSalioCalle([])"> No
+				</span>
+					
+				<label class="dependientesAdentroEdificio">¿Percibiste vibración o balanceo de?</label>				
+				<div class="contenedorMultiRespuesta dependientesAdentroEdificio">
+					<div class="rtaMultiRespuesta"><input type="checkbox" id="balanceo_edificio" name="balanceo_edificio" value="1">Edificio</div>  
+					<div class="rtaMultiRespuesta"><input type="checkbox" id="balanceo_habitacion" name="balanceo_habitacion" value="1">Habitación</div> 
+					<div class="rtaMultiRespuesta"><input type="checkbox" id="balanceo_mueble" name="balanceo_mueble" value="1">Mueble</div>
+				</div>				
+
+			
+									
+			<label>¿Con qué intensidad sentiste el sismo?</label>
+		
+			<select id="intensidad_sentida" name="intensidad_sentida" title="¿Con qué intensidad sentiste el sismo?" onchange="validarIntensidad([])">
+				<option value="-1">Selecciona</option>
+				<option value="1">Leve</option>
+				<option value="2">Moderado</option>
+				<option value="3">Fuerte</option>
+				<option value="4">Muy fuerte</option>
+			</select>
+			 
+			 	
+		
+			<label>¿Qué actividad realizabas cuando sentiste el sismo?</label>
+
+			<div class="contenedorMultiRespuesta">
+				<div class="rtaMultiRespuesta">
+					<input id="actividad_reposo" type="radio" name="actividad" value="0" checked="checked">
+					<label class="labelRadioButton">En reposo</label> 
+				</div>
+				
+				<div class="rtaMultiRespuesta">
+					<input id="actividad_movimiento" type="radio" name="actividad" value="0">
+					<label class="labelRadioButton">En movimiento</label> 
+				</div>
+				<div class="rtaMultiRespuesta">
+					<input id="actividad_durmiendo" type="radio" name="actividad" value="1">
+					Durmiendo y me desperté
+				</div>
+			</div>
+
+			<label>¿Cuál fue tu reacción?</label>
+			<div id="divRtasTuReaccion" class="contenedorMultiRespuesta">
+				<div class="rtaMultiRespuesta">
+					<input id="reaccion_ninguna" type="checkbox" onclick="validarReaccion([]);">Ninguna&nbsp;
+				</div> 
+				<div class="rtaMultiRespuesta">
+					<input id="reaccion_1" type="checkbox" name="reaccion_asombro" value="1" onclick="validarReaccion([]);">Asombro &nbsp;
+				</div>
+				<div class="rtaMultiRespuesta"> 
+					<input id="reaccion_2" type="checkbox" name="reaccion_susto" value="2" onclick="validarReaccion([]);">Susto&nbsp;
+				</div> 
+				<div class="rtaMultiRespuesta">
+					<input id="reaccion_3" type="checkbox" name="reaccion_panico" value="3" onclick="validarReaccion([]);">Pánico
+				</div>
+			</div>
+						
+			<label>¿Perdiste el equilibrio?</label>
+			<select id="perdida_estabilidad" name="perdida_estabilidad" title="¿Perdiste el equilibrio?" onchange="validarPerdidaEstabilidad([]);">
+				<option value="-1">Selecciona</option>
+				<option value="0">No</option>
+				<option value="1">Sentí mareo</option>
+				<option value="2">Perdí el equilibrio</option>
+				<option value="3">Tuve dificultad para mantenerme de pie</option>
+			</select>
+
+			<label>¿Las personas que estaban cerca de ti lo	sintieron?</label>
+			<select id="personas_cerca" name="personas_cerca" onchange="validarPersonasCerca([])" title="¿Las personas que estaban cerca de ti lo sintieron?">
+				<option value="-1">Selecciona</option>
+				<option value="0.2">No sé</option>
+				<option value="0">Nadie lo sintió</option>
+				<option value="0.5">Algunos lo sintieron y otros no</option>
+				<option value="1">La mayoría lo sintió</option>
+				<option value="1">Todos lo sentimos</option>
+				<option value="0">Estaba solo/a</option>
+			</select>
+		</fieldset>
+		
+		<fieldset class="panelPreguntas">
+			<legend>Objetos y construcciones</legend>
+			<label>Selecciona los efectos que observaste<br> en los objetos a tu alrededor:</label>
+			
+			<div style="padding-left: 0px;"> 
+				<input id="" type="checkbox" value="1" name="balanceo_colgantes">Balanceo de objetos colgantes<br> 
+				<input id="" type="checkbox" value="1" name="ruido_puertas">Ruido de puertas, ventanas, vidrios o porcelanas<br> 
+				<input id="" type="checkbox" value="1" name="golpeteo_porcelana">Golpeteo de porcelana, frascos o vasos<br> 
+				<input id="" type="checkbox" value="1" name="vaiven_puertas">Vaivén de puertas o ventanas<br>
+				<input id="" type="checkbox" value="1" name="oscilacion_liquidos">Oscilación o vertimiento de líquidos<br> 
+				<input id="" type="checkbox" value="1" name="reaccion_animales">Reacción de susto en los animales<br> 
+				<input id="" type="checkbox" value="1" name="caida_pequenos">Caída o desplazamiento de objetos pequeños<br> 
+				<input id="" type="checkbox" value="1" name="volcamiento_pesados">Desplazamiento o volcamiento de objetos pesados o muebles<br> 
+				<input id="" type="checkbox" value="1" name="caida_pesados">Caída de objetos pesados como televisores, computadores, etc.
+			</div>
+			
+			<label>¿Hubo algún daño en la construcción donde te encontrabas?</label>
+			<span>
+				<input id="dano_constr_si" type="radio" value="1" name="dano_construccion" onclick="toggleDanoConstruccion();" data-gtm-form-interact-field-id="0">
+				<label class="labelRadioButton">Sí</label>			
+				<input type="radio" id="dano_constr_no" value="0" name="dano_construccion" onclick="toggleDanoConstruccion();" checked="checked"> 
+				No
+			</span>
+			
+			
+				<label class="dependientesDano" style="display: block;">Material de la construcción averiada</label>
+
+				<select class="dependientesDano" name="material_construccion" style="display: block;">
+					<option value="1">No sé</option>
+					<option value="2">Adobe bahareque, tapia o roca</option>
+					<option value="3">Ladrillo</option>
+					<option value="4">Concreto reforzado</option>
+					<option value="5">Madera</option>
+					<option value="6">Acero</option>
+				</select>
+
+				<label class="dependientesDano" style="display: block;">Tipo de daño</label>
+				<div class="dependientesDano contenedorMultiRespuesta" style="display: block;">
+					<div class="rtaMultiRespuesta">
+						<input type="checkbox" value="1" id="tipo_danos_grietas_revest" name="tipo_danos_grietas_revest">Grietas delgadas en el
+						pañete o revestimiento
+					</div>
+					<div class="rtaMultiRespuesta"> 
+						<input type="checkbox" value="2" id="tipo_danos_caida_revest" name="tipo_danos_caida_revest">Caída de trozos de
+						pañete
+					</div>
+					<div class="rtaMultiRespuesta"> 
+						<input type="checkbox" value="2" id="tipo_danos_caida_tejas" name="tipo_danos_caida_tejas" data-gtm-form-interact-field-id="1">Caída
+						de tejas o chimeneas 
+					</div> 
+					<div class="rtaMultiRespuesta">
+						<input type="checkbox" value="3" id="tipo_danos_grietas_muros" name="tipo_danos_grietas_muros">Grietas
+						en muros
+					</div>
+				</div>
+			
+		</fieldset>
+		
+		<fieldset class="panelOtrosEfectos">
+	
+			<legend>Otros efectos</legend>
+			
+			<label>¿Hubo algún efecto sobre la naturaleza cerca de donde estabas?</label>
+			
+			<textarea rows="4" name="efectos_naturaleza" maxlength="500" style="margin-bottom: 10px; resize: none;" placeholder="Por ejemplo: deslizamientos de tierra, grietas en el suelo, cambios en el curso de ríos, etc. "></textarea>								
+			
+			<label>¿Algún comentario adicional sobre el sismo	que resulte útil?</label>
+			
+			<textarea rows="4" name="comentarios" maxlength="500" style="margin-bottom: 10px; resize:none;" placeholder="Por ejemplo: duración, ruido, dirección del movimiento, etc."></textarea>
+	
+		
+			<label>Información de contacto (opcional)</label>
+
+
+			<div>
+			
+				<table style="width: 100%;">
+					<tbody><tr style="width: 100%;">
+						<td style="padding-right: 5px;">Nombre</td>
+						<td style="width: 100%;">
+							<input type="text" name="contacto_nombre" style="width: 100%;" maxlength="100">
+						</td>
+					</tr>
+					<tr style="width: 100%;">
+						<td>E-mail</td>
+						<td style="width: 100%;">
+							<input type="text" name="contacto_correo" style="width: 100%;" maxlength="100">
+						</td>
+					</tr>
+				</tbody></table>	
+			</div>	
+		</fieldset>		
+		
+		<div id="divContenedorCaptcha" style="display:flex; flex-direction:row; justify-content: center; padding-bottom:10px;">
+			<div class="g-recaptcha" data-sitekey="6LccZqwpAAAAADvZGVjcSlwsIJs6yhB2aUowwpIk" data-callback="captchaDiligenciado" data-expired-callback="captchaExpirado"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-g2ohju2jr78i" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="./Formulario nuevo - Evaluación de intensidades_files/anchor.html"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./Formulario nuevo - Evaluación de intensidades_files/saved_resource.html"></iframe></div>
+		</div>
+	
+		<div style="display:flex; justify-content: center; align-items: center;">
+			<button id="boton_enviar" type="button" onclick="enviarForm({mostrarMensaje:true});" style="background-color: rgb(104, 158, 55); color: #FFFFFF; display: block;">
+				Enviar
+			</button>
+		</div>		
+
+		<div id="pagina_final" style="display: none;">
+			<div>
+				<h2>Muchas gracias por tu colaboración</h2>
+			</div>
+
+			<div style="background-image: url(&#39;img/pattern_peq.png&#39;);">
+				<img src="./Formulario nuevo - Evaluación de intensidades_files/gracias.png" style="margin: 0 auto;">
+			</div>
+		</div>
+	</form>
+
+	<div id="div_link_resultados" style="display: none; ">
+		<div style="color: #545454; background-color: #DDDDDD; font-weight: bold; margin-bottom: 10px;">
+			¡Conoce los sismos sentidos y los resultados generados a
+			partir del formulario de intensidades!
+			<!-- 
+		Te invitamos a conocer los productos de más de 1000 sismos que se han elaborado con la información que tú y otros usuarios nos han proporcionado a partir del formulario de intensidades, dándo click siguiente enlace:
+		 -->
+		</div>			
+
+		<form action="http://localhost:8080/evaluacion_intensidad/EvaluacionIntensidadesServlet">
+			<input type="hidden" name="metodo" value="irASelector">
+			<button type="submit" class="btn btn-success" style="background-color: rgb(104, 158, 55); color: #FFFFFF;">
+				Ver	sismos sentidos
+			</button>
+		</form>
+	</div>
+
+	<div style="font-size: 11px;background-color: #545454; color: #DDDDDD; display:flex; flex-direction:column; justify-content: center; align-items: center;">
+		<div style="display:flex; flex-wrap:wrap; justify-content: center; align-items: center;">
+			<div><b>Dirección: </b> Diagonal 53 No 34 - 53 Bogotá D.C.	Colombia, </div>
+			<div><b>Teléfono:</b> (571)220 0200 - (571)220 0100 -(571)222 1811,</div> 
+			<div>Fáx: (571) 222 07 97</div>
+		</div>
+		<div style="display:flex; flex-wrap:wrap; justify-content: center; align-items: center;">
+			Todos los derechos reservados 2016-2017 Apartado Aéreo 4865
+		</div>
+		<div style="display:flex; flex-wrap:wrap; justify-content: center; align-items: center;">			
+			<a href="https://www2.sgc.gov.co/Nosotros/AcercaDelSgc/Paginas/Politicas-de-Calidad.aspx" class="link_oficial">
+				Políticas y cumplimiento legal</a> | 
+			<a href="https://www2.sgc.gov.co/Nosotros/NuestrasSedes/Paginas/nuestras-sedes.aspx" class="link_oficial">
+				Nuestras sedes</a> | <a href="mailto:cliente@sgc.gov.co" class="link_oficial">Contáctenos</a> |
+			<a href="mailto:notificacionesjudiciales@sgc.gov.co" class="link_oficial">
+				Notificaciones Judiciales</a> | 
+			<a href="https://www2.sgc.gov.co/AtencionAlCiudadano/Paginas/PQRDS.aspx" class="link_oficial">
+			    PQRD
+			</a>
+		</div>
+	</div>
+
+
+</body></html>
