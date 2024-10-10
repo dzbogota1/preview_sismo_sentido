@@ -1,4 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-sismosentido.sgc.gov.co	TRUE	/EvaluacionIntensidad	FALSE	1999999999	JSESSIONID	dSRuFO0zrZgi3mNh-VVtyoZoYRb8jlE52l9D3z7P.srv-siss3
-
