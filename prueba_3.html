@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tom Select Ejemplo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tom-select@2.0.1/dist/css/tom-select.css" rel="stylesheet">
+  <style>
+        /* Estilos personalizados para el select */
+        body {
+            font-family: 'Lobster';
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .select-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            font-size: 16px;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        /* Estilo responsive para el select en móviles */
+        @media (max-width: 768px) {
+            .select-container {
+                padding: 15px;
+            }
+            select {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+Probando con tom select
+
+  <!-- Select element -->
+  <select id="mi-select" placeholder="Selecciona una opción...">
+    <option value="1">Opción 1</option>
+    <option value="2">Opción 2</option>
+    <option value="3">Opción 3</option>
+    <option value="4">Opción 4</option>
+  </select>
+
+  <script src="https://cdn.jsdelivr.net/npm/tom-select@2.0.1/dist/js/tom-select.complete.min.js"></script>
+  <script>
+    // Inicializar Tom Select en el select con ID "mi-select"
+    new TomSelect("#mi-select", {
+      maxItems: 1, // Permitir solo una selección (puedes ajustar este valor)
+      create: false // No permitir crear nuevas opciones
+    });
+  </script>
+  
+</body>
+</html>
